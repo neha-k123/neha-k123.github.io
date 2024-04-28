@@ -35,6 +35,7 @@
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#music" class="nav__link">More</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </div>
@@ -226,34 +227,41 @@
     <!--===== WORK =====-->
     <section class="work section" id="work">
       <h2 class="section-title">Personal Projects</h2>
-      <p class="skills__text" style="text-align: center;"> Hover over each card to learn more about my multi-modal
+      <p class="skills__text" style="text-align: center;"> Click on each card to learn more about my multi-modal
         projects.</p>
 
       <div class="work__container bd-grid">
-        <a href="" class="work__img">
-          <img src="img/new_caml.png" alt="">
+        <a href="https://github.com/neha-k123/Invaders-Video-Game-Submission-for-CS-1110-" class="work__img">
+          <img src="img/space_invaders.png" alt="">
+          <p> Python Space Invaders Game</p>
         </a>
-        <a href="" class="work__img">
+        <a href="img/SWIB ELP FA21 Group 9 - Investing in Fintech Analysis.pdf"
+          download="SWIB ELP FA21 Group 9 - Investing in Fintech Analysis.pdf" class="work__img">
           <img src="img/stock.png" alt="">
+          <p> Investing in Fintech Portfolio</p>
         </a>
-        <a href="" class="work__img">
+        <a href="https://github.com/neha-k123/Datathon2021" class="work__img">
           <img src="img/crypto.png" alt="">
+          <p> Sentiment Analysis on Stock-related Tweets </p>
         </a>
-        <a href="" class="work__img">
-          <img src="img/wiki.png" alt="">
+        <a href="img/P2_Paper.pdf" download="P2_Paper.pdf" class="work__img">
+          <img src="img/Oscars94.jpeg" alt="">
+          <p> Predicting the Oscars' Best Picture</p>
         </a>
-        <a href="" class="work__img">
+        <a href="https://github.com/neha-k123/movie-script-bias" class="work__img">
           <img src="img/movie.png" alt="">
+          <p>Gender and Racial Bias in Movie Scripts</p>
         </a>
-        <a href="" class="work__img">
+        <a href="https://github.com/neha-k123/Mobile_Web_Research" class="work__img">
           <img src="img/contract.jpeg" alt="">
+          <p> Android app to simplify legal contracts</p>
         </a>
       </div>
     </section>
 
 
-    <section class="work section" id="work">
-      <h2 class="section-title">My Music</h2>
+    <section class="work section" id="music">
+      <h2 class="section-title">More About Me</h2>
       <p class="skills__text" style="text-align: center;"> Take a listen to what's been on repeat for me!</p>
       <div align="center">
         </p><iframe style="border-radius:12px"
@@ -261,18 +269,37 @@
           height="352" frameBorder="0" allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+        <!-- <div class="container_img">
+          <img src="img/CDS.JPG" width="100" height="70" alt="CDS_FullTeam" class="more_img">
+          <div class="overlay">
+            <div class="text">Cornell Data Science Full Team 2023</div>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="text">Cornell Data Science Full Team</div> -->
+
+
     </section>
+
+    <script>
+      function updateButtonText() {
+        console.log("Hello...")
+        document.getElementById("submitBtn").value = "Thanks!";
+        document.querySelector(".contact__form").addEventListener("submit", updateButtonText);
+      }
+    </script>
 
     <!--===== CONTACT =====-->
     <section class="contact section" id="contact">
       <h2 class="section-title">Contact Me!</h2>
 
       <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
+        <form action="" class="contact__form" onsubmit="updateButtonText()">
           <input type="text" placeholder="Name" class="contact__input">
           <input type="mail" placeholder="Email" class="contact__input">
           <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-          <input type="button" value="Submit" class="contact__button button">
+          <input type="button" id="submitBtn" value="Submit" class="contact__button button">
         </form>
       </div>
     </section>
@@ -295,7 +322,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <!--===== MAIN JS =====-->
-  <script src="assets/js/main.js"></script>
+  <script src="/code.js"></script>
 </body>
 
 </html>

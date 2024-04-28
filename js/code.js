@@ -1,3 +1,7 @@
+document.getElementById("contact__button").onclick = function () { console.log("Click works"); };
+
+
+
 // $(document).ready(function () {
 //   var $nav_toggle = $('#nav-toggle');
 //   // var $nav_toggle_after = $('#nav-toggle::after');
