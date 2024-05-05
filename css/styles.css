@@ -421,6 +421,12 @@ img {
 
 .about__subtitle {
   margin-bottom: var(--mb-2);
+  font-size: 25px;
+}
+
+.about__txt {
+  font-size: 17px;
+  font-weight: normal;
 }
 
 .about__img {
